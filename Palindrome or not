@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,r;
+    cout<<"enter number";
+    cin>>a;
+    int temp=a;
+   int  sum=0;
+    while(a!=0)
+    {
+    r=a%10;
+    a=a/10;
+    sum =sum*10+r;
+    
+    }
+    if(sum==temp)
+    cout<<"palindrome";
+    else
+    cout<<"not palindrome";
+
+    return 0;
+}
