@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,r;
+    cout<<"enter number";
+    cin>>a;
+    int temp=a;
+   int ce=0,co=0,range=0;
+    while(a!=0)
+    {
+    r=a%10;
+    a=a/10;
+    range++;
+    if(r%2==0)
+    ce++;
+    else
+    co++;
+    }
+    if(ce==range)
+    cout<<"strongly even";
+    else if(co==range)
+    cout<<"strongly odd";
+    else
+     cout<<"mixed number";
+    
+    return 0;
+}
